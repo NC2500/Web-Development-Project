@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Registration</title>
+</head>
+<body>
+
+    <h2>Membership Registration</h2>
+
+    <form action="success.html" method="POST">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" maxlength="25" pattern="[A-Za-z]+" required>
+        <br><br>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" maxlength="25" pattern="[A-Za-z]+" required>
+        <br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="login_id">Login ID:</label>
+        <input type="text" id="login_id" name="login_id" maxlength="10" pattern="[A-Za-z]+" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="password" maxlength="25" pattern="[A-Za-z]+" required>
+        <br><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
