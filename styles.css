@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ddd;
+    padding: 10px 20px;
+    position: relative; /* Ensures the navbar stays above */
+    z-index: 1000; /* Very high value to keep it on top */
+    
+}
+
+.logo img {
+    width: 70px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 8px 12px;
+    display: block;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    display: none;
+    width: 180px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1001; /* Ensures the dropdown is above everything */
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu a {
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/*Background Image Selection */ 
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('First.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 5%;
+    color: white;
+}
+
+/* Content Box */
+.content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+/* Small Text */
+.small-text {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Main Heading */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Story Section */
+.story-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('Second.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* Text Content */
+.story-content {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 20px 30px;
+    border-radius: 5px;
+    max-width: 600px;
+    
+}
+
+/* Heading */
+.story-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+
+}
+
+/* Paragraph */
+.story-content p {
+    font-size: 14px;  /* Smaller font size */
+    line-height: 1.6; /* Increased spacing between lines */
+    letter-spacing: 0.5px; /* Slight letter spacing */
+    max-width: 550px; /* Limits paragraph width */
+    margin: 0 auto;  /* Centers the paragraph */
+}
+
+.left-section {
+    flex: 1;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.promo-box, .news-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: left;
+    margin-bottom: 20px;
+    
+    
+}
+
+.news-box img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.right-section {
+    flex: 1;
+}
+
+.right-section img {
+    width: 600px;
+    height: 800px;
+    border-radius: 8px;
+}
+
+.map-container{
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h3{
+    color: #333;
+    margin-bottom: 20px;
+}
+
+iframe{
+    width:80%;
+    height: 500px;;
+    filter:invert(100%);
+}
+
+
+.title {
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    color: #777;
+    text-align: center;
+    
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    background-color: rgb(217, 217, 217);
+}
+
+/* Footer Links */
+.footer-links {
+    text-align: left;
+}
+
+.footer-links p {
+    margin: 5px 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Social Media Section */
+.social-media {
+    text-align: right;
+}
+
+.social-media span {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* Social Icons */
+.icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.icons a img {
+    width: 110px;
+    height: 80px;
+    transition: opacity 0.3s;
+}
+
+.icons a img:hover {
+    opacity: 0.7;
+}
+
+/* Copyright */
+.copyright {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #555;
+    font-style: italic;  /* Makes the text italic */
+    text-align: center;  /* Centers the text */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px; /* Adjust based on your header/footer height */
+    padding: 20px;
+}
+
+.enquiry-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.enquiry-form h2 {
+    color: #444;
+    margin-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Form Group - Aligning Fields */
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    max-width:800px
+}
+
+.form-group label {
+    flex-basis: 100%;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Name and Address in One Line */
+.form-group:first-child input {
+    margin-right: 4%;
+}
+.form-group:first-child input:last-child {
+    margin-right: 0;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: gray;
+}
