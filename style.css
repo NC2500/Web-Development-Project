@@ -49,3 +49,304 @@ footer {
     position: absolute;
     width: 100%;
 }
+
+.past-activities-page {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .past-activities-page .div {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 1440px;
+    height: 4703px;
+    position: relative;
+  }
+  
+  .past-activities-page .navbar {
+    position: absolute;
+    width: 1440px;
+    height: 95px;
+    top: 0;
+    left: 0;
+    background-color: #d9d9d9;
+  }
+  
+  .past-activities-page .text-wrapper {
+    width: 103px;
+    left: 1091px;
+    position: absolute;
+    top: 34px;
+    font-family: "Lora-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .past-activities-page .overlap {
+    position: absolute;
+    width: 492px;
+    height: 60px;
+    top: 34px;
+    left: 33px;
+  }
+  
+  .past-activities-page .text-wrapper-2 {
+    position: absolute;
+    width: 194px;
+    top: 0;
+    left: 298px;
+    font-family: "Lora-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .past-activities-page .text-wrapper-3 {
+    position: absolute;
+    width: 249px;
+    top: 0;
+    left: 0;
+    font-family: "Lora-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .past-activities-page .text-wrapper-4 {
+    position: absolute;
+    width: 160px;
+    top: 0;
+    left: 183px;
+    font-family: "Lora-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .past-activities-page .text-wrapper-5 {
+    position: absolute;
+    top: 34px;
+    left: 537px;
+    font-family: "Lora-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .past-activities-page .text-wrapper-6 {
+    width: 159px;
+    left: 690px;
+    position: absolute;
+    top: 34px;
+    font-family: "Lora-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .past-activities-page .text-wrapper-7 {
+    left: 849px;
+    position: absolute;
+    top: 34px;
+    font-family: "Lora-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .past-activities-page .logo-png {
+    position: absolute;
+    width: 116px;
+    height: 95px;
+    top: 0;
+    left: 1255px;
+  }
+  
+  .past-activities-page .rectangle {
+    position: absolute;
+    width: 1440px;
+    height: 95px;
+    top: 1239px;
+    left: -1px;
+    background-color: #d9d9d9;
+  }
+  
+  .past-activities-page .p {
+    position: absolute;
+    width: 485px;
+    top: 2459px;
+    left: 103px;
+    font-family: "Lora-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 64px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .past-activities-page .overlap-group {
+    position: absolute;
+    width: 1440px;
+    height: 1116px;
+    top: 123px;
+    left: 0;
+  }
+  
+  .past-activities-page .text-wrapper-8 {
+    position: absolute;
+    width: 469px;
+    top: 0;
+    left: 537px;
+    font-family: "Lora-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 64px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .past-activities-page .image {
+    position: absolute;
+    width: 826px;
+    height: 546px;
+    top: 570px;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .past-activities-page .img {
+    position: absolute;
+    width: 812px;
+    height: 556px;
+    top: 140px;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .past-activities-page .image-2 {
+    position: absolute;
+    width: 735px;
+    height: 556px;
+    top: 140px;
+    left: 705px;
+    object-fit: cover;
+  }
+  
+  .past-activities-page .image-3 {
+    position: absolute;
+    width: 673px;
+    height: 516px;
+    top: 600px;
+    left: 767px;
+  }
+  
+  .past-activities-page .rectangle-2 {
+    position: absolute;
+    width: 890px;
+    height: 454px;
+    top: 419px;
+    left: 300px;
+    background-color: #d9d9d9cc;
+    border-radius: 60px;
+  }
+  
+  .past-activities-page .text-wrapper-9 {
+    position: absolute;
+    width: 870px;
+    top: 446px;
+    left: 337px;
+    font-family: "Lora-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 96px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .past-activities-page .rectangle-3 {
+    position: absolute;
+    width: 1455px;
+    height: 95px;
+    top: 2212px;
+    left: -15px;
+    background-color: #d9d9d9;
+  }
+  
+  .past-activities-page .rectangle-4 {
+    position: absolute;
+    width: 1440px;
+    height: 97px;
+    top: 3069px;
+    left: 0;
+    background-color: #d9d9d9;
+  }
+  
+  .past-activities-page .frame {
+    position: absolute;
+    width: 646px;
+    height: 56px;
+    top: 3347px;
+    left: 397px;
+  }
+  
+  .past-activities-page .element-brew-go-coffee {
+    position: absolute;
+    width: 646px;
+    top: -1px;
+    left: 0;
+    font-family: "Istok Web-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .past-activities-page .text-wrapper-10 {
+    position: absolute;
+    width: 406px;
+    top: 1635px;
+    left: 954px;
+    font-family: "Lora-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 64px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .past-activities-page .image-4 {
+    position: absolute;
+    width: 874px;
+    height: 878px;
+    top: 1334px;
+    left: 0;
+  }
+  
+  .past-activities-page .image-5 {
+    position: absolute;
+    width: 757px;
+    height: 762px;
+    top: 2307px;
+    left: 683px;
+    object-fit: cover;
+  }
+  
