@@ -349,4 +349,207 @@ footer {
     left: 683px;
     object-fit: cover;
   }
+  .personal-page {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .personal-page .div {
+    background-color: #ffffff;
+    width: 1440px;
+    height: 1693px;
+    position: relative;
+  }
+  
+  .personal-page .text-wrapper {
+    position: absolute;
+    width: 927px;
+    top: 170px;
+    left: 245px;
+    font-family: "Lora-BoldItalic", Helvetica;
+    font-weight: 700;
+    font-style: italic;
+    color: #000000;
+    font-size: 128px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .personal-page .text-wrapper-2 {
+    position: absolute;
+    width: 260px;
+    top: 362px;
+    left: 590px;
+    font-family: "Lora-BoldItalic", Helvetica;
+    font-weight: 700;
+    font-style: italic;
+    color: #000000;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .personal-page .overlap-group {
+    position: absolute;
+    width: 826px;
+    height: 78px;
+    top: 450px;
+    left: 304px;
+  }
+  
+  .personal-page .line {
+    position: absolute;
+    width: 826px;
+    height: 1px;
+    top: 55px;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .personal-page .text-wrapper-3 {
+    position: absolute;
+    width: 437px;
+    top: 0;
+    left: 186px;
+    font-family: "Lora-BoldItalic", Helvetica;
+    font-weight: 700;
+    font-style: italic;
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .personal-page .ellipse {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 535px;
+    left: 616px;
+    background-color: #d9d9d9;
+    border-radius: 100px;
+  }
+  
+  .personal-page .frame {
+    display: flex;
+    flex-wrap: wrap;
+    width: 373px;
+    align-items: flex-start;
+    gap: 0px 0px;
+    position: absolute;
+    top: 791px;
+    left: 529px;
+    background-color: #d9d9d9;
+    border: 1px solid;
+    border-color: #000000;
+  }
+  
+  .personal-page .text-wrapper-4 {
+    position: relative;
+    width: 196px;
+    height: 39px;
+    margin-top: -1.00px;
+    font-family: "Lora-BoldItalic", Helvetica;
+    font-weight: 700;
+    font-style: italic;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .personal-page .text-wrapper-5 {
+    position: relative;
+    width: 174px;
+    height: 39px;
+    margin-top: -1.00px;
+    font-family: "Lora-BoldItalic", Helvetica;
+    font-weight: 700;
+    font-style: italic;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .personal-page .text-wrapper-6 {
+    position: relative;
+    width: 196px;
+    height: 39px;
+    font-family: "Lora-BoldItalic", Helvetica;
+    font-weight: 700;
+    font-style: italic;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .personal-page .text-wrapper-7 {
+    position: relative;
+    width: 174px;
+    height: 39px;
+    font-family: "Lora-BoldItalic", Helvetica;
+    font-weight: 700;
+    font-style: italic;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .personal-page .text-wrapper-8 {
+    position: relative;
+    width: 197px;
+    height: 68px;
+    font-family: "Lora-BoldItalic", Helvetica;
+    font-weight: 700;
+    font-style: italic;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .personal-page .text-wrapper-9 {
+    position: relative;
+    width: 175px;
+    height: 68px;
+    font-family: "Lora-BoldItalic", Helvetica;
+    font-weight: 700;
+    font-style: italic;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .personal-page .p {
+    position: relative;
+    width: 197px;
+    height: 94px;
+    font-family: "Lora-BoldItalic", Helvetica;
+    font-weight: 700;
+    font-style: italic;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .personal-page .text-wrapper-10 {
+    position: relative;
+    width: 175px;
+    height: 94px;
+    font-family: "Lora-BoldItalic", Helvetica;
+    font-weight: 700;
+    font-style: italic;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
   
