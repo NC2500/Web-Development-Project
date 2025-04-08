@@ -411,7 +411,8 @@ footer {
   
   .personal-page .text-wrapper-3 {
     position: absolute;
-    width: 437px;
+    width: auto; /* Allow the width to adjust to the content */
+    white-space: nowrap; /* Prevent text wrapping */
     top: 0;
     left: 186px;
     font-family: "Lora-BoldItalic", Helvetica;
@@ -552,4 +553,251 @@ footer {
     letter-spacing: 0;
     line-height: normal;
   }
+  .header {
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
   
+  .header .div {
+    background-color: #d9d9d9;
+    width: 1440px;
+    height: 95px;
+    position: relative;
+  }
+  
+  .header .text-wrapper {
+    position: absolute;
+    width: 103px;
+    top: 34px;
+    left: 1285px;
+    font-family: "Lora-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .header .text-wrapper-2 {
+    position: absolute;
+    top: 34px;
+    left: 495px;
+    font-family: "Lora-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .header .text-wrapper-3 {
+    position: absolute;
+    top: 34px;
+    left: 248px;
+    font-family: "Lora-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .header .text-wrapper-4 {
+    position: absolute;
+    top: 34px;
+    left: 350px;
+    font-family: "Lora-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .header .text-wrapper-5 {
+    position: absolute;
+    top: 34px;
+    left: 638px;
+    font-family: "Lora-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .header .text-wrapper-6 {
+    position: absolute;
+    top: 34px;
+    left: 749px;
+    font-family: "Lora-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .header .text-wrapper-7 {
+    position: absolute;
+    top: 34px;
+    left: 1105px;
+    font-family: "Lora-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .header .logo-png {
+    position: absolute;
+    width: 114px;
+    height: 95px;
+    top: 0;
+    left: 85px;
+  }
+  .footer {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .footer .overlap-wrapper {
+    width: 1440.0px;
+    height: 387px;
+  }
+  
+  .footer .overlap {
+    position: relative;
+    width: 1440px;
+    height: 386px;
+  }
+  
+  .footer .overlap-group {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1440px;
+    height: 386px;
+  }
+  
+  .footer .rectangle {
+    position: absolute;
+    width: 1438px;
+    height: 312px;
+    top: 0;
+    left: 2px;
+    background-color: #d9d9d9;
+  }
+  
+  .footer .text-wrapper {
+    position: absolute;
+    width: 235px;
+    top: 63px;
+    left: 688px;
+    font-family: "Lora-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .footer .acknowledgement {
+    position: absolute;
+    width: 236px;
+    top: 104px;
+    left: 83px;
+    font-family: "Lora-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .footer .line {
+    position: absolute;
+    width: 1440px;
+    height: 1px;
+    top: 45px;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .footer .arrow {
+    position: absolute;
+    width: 15px;
+    height: 37px;
+    top: 27px;
+    left: 736px;
+  }
+  
+  .footer .erasebg-transformed {
+    position: absolute;
+    width: 194px;
+    height: 140px;
+    top: 108px;
+    left: 1120px;
+  }
+  
+  .footer .img {
+    position: absolute;
+    width: 127px;
+    height: 88px;
+    top: 130px;
+    left: 1290px;
+  }
+  
+  .footer .div {
+    position: absolute;
+    width: 281px;
+    top: 83px;
+    left: 1136px;
+    font-family: "Lora-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .footer .element-brew-go-coffee {
+    position: absolute;
+    width: 646px;
+    top: 319px;
+    left: 406px;
+    font-family: "Lora-Italic", Helvetica;
+    font-weight: 400;
+    font-style: italic;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+/* Info Table */
+.info-table {
+    margin: 20px auto; /* Centers the table horizontally */
+    margin-top: 800px; /* Adds space below "Bachelor of Computer Science" */
+    border-collapse: collapse;
+    width: 80%; /* Adjust width as needed */
+    text-align: center; 
+}
+
+.info-table th, .info-table td {
+    border: 1px solid #000; /* Adds a border to table cells */
+    padding: 10px;
+}
+
+.info-table th {
+    background-color: #d9d9d9; /* Header background color */
+    font-weight: bold;
+}

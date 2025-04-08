@@ -228,7 +228,7 @@ h3{
 
 iframe{
     width:80%;
-    height: 500px;;
+    height: 500px;
     filter:invert(100%);
 }
 
@@ -263,6 +263,14 @@ iframe{
     font-size: 14px;
     cursor: pointer;
 }
+
+.footer {
+    margin-top: auto; /* Pushes the footer to the bottom */
+    background-color: #d9d9d9; /* Optional: Footer background color */
+    padding: 20px;
+    text-align: center;
+}
+
 
 /* Social Media Section */
 .social-media {
