@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brew & Co. Coffee</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,300&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap">
+
 </head>
 <body>
 
     <nav class="navbar">
         <div class="logo">
-            <a href="main.html"><img src="Logo.png" alt="Logo"></a>
+            <a href="main.html"><img src="images/Logo_1.png" alt="Logo"></a>
         </div>
-
+        
         <ul class="nav-links">
-
-            
             <li class="dropdown">
                 <a href="#" class="dropbtn">MENU ▼</a>
                 <ul class="dropdown-menu">
@@ -23,8 +24,8 @@
                     <li><a href="#">Artisan Brew</a></li>
                     <li><a href="#">Non-Coffee</a></li>
                     <li><a href="#">Hot Beverages</a></li>
-                </ul>
-            </li>
+        </ul>
+        </li>
             
             <li class="dropdown">
                 <a href="#" class="dropbtn">ACTIVITIES ▼</a>
@@ -42,31 +43,109 @@
         </ul>
     </nav>
 
+    
     <section class="hero">
+        
         <div class="content">
             <p class="small-text">Brew & Go, Coffee Estd. 2023</p>
             <h1>Freshly Brewed, <br> Ready to Go!</h1>
             <a href="#" class="btn">Discover Our Coffee</a>
         </div>
     </section>
-
-    <section class="story-section">
-        <div class="story-content">
-            <h2>Our Story</h2>
-            <p>Brew & Go. Coffee is a Kuching-based brand known for its handcrafted 
-               coffee and a variety of non-coffee beverages like matcha and chocolate.</p>
-        </div>
-    </section><br>
+    
+    <!-- <div class="section-fade"></div> -->
+    <div class="cup-float-container">
+        <img src="images/Cup_3.png" alt="Floating Coffee Cup">
+    </div>
 
     <section class="menu">
         <div class="menu-content">
-            <h3>Our Signature</h3><br>
+        <br><br><br>
+          <h3 class="menu-title">Our Signature</h3>
+      
+          <div class="card-wrapper-with-arrows">
+            
+            <a href="#card1" class="arrow left-arrow">&#10094;</a>
+      
+            <div class="card-wrapper">
+              <div class="menu-slider">
+                <div class="menu-card" id="card1">
+                  <img src="images/Coffee/Cappuccino Cold foam.jpeg" alt="Cappuccino Cold Foam">
+                  <h3>Cappuccino Cold Foam</h3>
+                  <p>Classic cappuccino topped with a smooth, velvety cold foam. Bold yet airy.</p>
+                </div>
+      
+                <div class="menu-card" id="card2">
+                  <img src="images/Coffee/Cheese Americano.jpeg" alt="Cheese Americano">
+                  <h3>Cheese Americano</h3>
+                  <p>Strong black coffee mellowed by a creamy cheese foam. Savory meets bold.</p>
+                </div>
+      
+                <div class="menu-card" id="card3">
+                  <img src="images/Coffee/Yuzu Americano.jpeg" alt="Yuzu Americano">
+                  <h3>Yuzu Americano</h3>
+                  <p>A zesty citrus twist in a classic Americano. Bright, bold, and refreshing.</p>
+                </div>
+      
+                <div class="menu-card" id="card4">
+                  <img src="images/Coffee/Orange mocha.jpeg" alt="Orange Mocha">
+                  <h3>Orange Mocha</h3>
+                  <p>Rich chocolate with a splash of orange. Decadent, fruity, and indulgent.</p>
+                </div>
+      
+                <div class="menu-card" id="card5">
+                    <img src="images/Coffee/mocha.jpeg" alt="Mocha">
+                    <h3>Mocha</h3>
+                    <p>A rich fusion of chocolate and espresso. Smooth, deep, and indulgent.</p>
+                  </div>
 
+                <div class="menu-card" id="card6">
+                  <img src="images/Coffee/Matcha Latte.jpeg" alt="Matcha Latte">
+                  <h3>Matcha Latte</h3>
+                  <p>Earthy premium matcha blended with creamy milk. Smooth and energizing.</p>
+                </div>
+      
+                <div class="menu-card" id="card7">
+                  <img src="images/Coffee/strawberry latte.jpeg" alt="Strawberry Latte">
+                  <h3>Strawberry Latte</h3>
+                  <p>Fresh milk infused with sweet strawberry purée. Creamy, fruity, and refreshing.</p>
+                </div>
 
+                <div class="menu-card" id="card8">
+                    <img src="images/Coffee/Vienna latte.jpeg" alt="Vienna Latte">
+                    <h3>Vienna Latte</h3>
+                    <p>Espresso topped with whipped cream. Smooth, sweet, and luxurious.</p>
+                </div>
 
+              </div>
+            </div>
+      
+            <a href="#card8" class="arrow right-arrow">&#10095;</a>
+          </div>
+      
+          <div class="menu-cta">
+            <a href="#" class="btn">Discover Our Signature</a>
+          </div>
         </div>
+      </section>
 
-    </section><br>
+      <hr class="section-divider">
+      <section class="story-section-flex">
+        <div class="story-image"></div>
+        <div class="story-text">
+          <h2>Our Story</h2>
+          <h4 class="subheading">Born in Kuching, brewed for all.</h4>
+          <p>
+            Brew & Go is a Kuching-based coffee brand, rooted in passion and quality. We’re known for our handcrafted brews that celebrate local and global inspirations — from classic espresso blends to unique artisan creations.
+          </p>
+          <p>
+            Beyond coffee, we offer a delightful variety of matcha and chocolate beverages, crafted for every taste. Each cup tells a story — carefully brewed to bring warmth, comfort, and joy to your everyday moments.
+          </p>
+        </div>
+      </section>
+      
+
+    
 <hr>
 
 <section class="latest-container">
@@ -83,7 +162,7 @@
             </div>
         </div>
     <div class="right-section">
-        <img src="MarchPromo.jpg" alt="" >
+        <img src="images/MarchPromo.jpg" alt="" >
     </div>
 </section><br>
 
