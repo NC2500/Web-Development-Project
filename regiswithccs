@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Co. Coffee</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<style>
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px; /* Adjust based on your header/footer height */
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.membership-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.membership-form h2 {
+    color: #444;
+    margin-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Form Group - Aligning Fields */
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    max-width:800px
+}
+
+.form-group label {
+    flex-basis: 100%;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Name and Address in One Line */
+.form-group:first-child input {
+    margin-right: 4%;
+}
+.form-group:first-child input:last-child {
+    margin-right: 0;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: gray;
+}
+
+
+</style>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="main.html"><img src="images/Logo_1.png" alt="Logo"></a>
+        </div>
+
+        <ul class="nav-links">
+            
+            <li class="dropdown">
+                <a href="#" class="dropbtn">MENU ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Basic Brew</a></li>
+                    <li><a href="#">Artisan Brew</a></li>
+                    <li><a href="#">Non-Coffee</a></li>
+                    <li><a href="#">Hot Beverages</a></li>
+                </ul>
+            </li>
+            
+            <li class="dropdown">
+                <a href="#" class="dropbtn">ACTIVITIES ▼ </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Coming Soon</a></li>
+                    <li><a href="#">Current</a></li>
+                    <li><a href="#">Past Activities</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="#">JOIN US</a></li>
+            <li><a href="enquiry.html">ENQUIRY</a></li>
+            <li><a href="membership.html">MEMBERSHIP</a></li>
+            <li><a href="#">LOGIN</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="membership-form">
+            <h2>Membership Registration</h2>
+            <form>
+                <div class="form-group">
+                     <label for="first_name">First Name:</label>
+                        <input type="text" id="first_name" name="first_name" maxlength="25" pattern="[A-Za-z]+" required>
+                        <br><br>
+    
+                        <label for="last_name">Last Name:</label>
+                        <input type="text" id="last_name" name="last_name" maxlength="25" pattern="[A-Za-z]+" required>
+                        <br><br>
+    
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                        <br><br>
+    
+                        <label for="login_id">Login ID:</label>
+                        <input type="text" id="login_id" name="login_id" maxlength="10" pattern="[A-Za-z]+" required>
+                        <br><br>
+    
+                        <label for="password">Password:</label>
+                        <input type="text" id="password" name="password" maxlength="25" pattern="[A-Za-z]+" required>
+                        <br><br>
+						
+                </div>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+                <div class="footer-links">
+                    <span>About Us</span>
+                    <p><a href="#">Norman Zhi Wen Chung </a></p>
+                    <p><a href="#">Tammy Ru Xiu Tay</a></p>
+                    <p><a href="#">Miaw Fong Lim</a></p>
+                    <p><a href="#">Bahrose Hassan Babar</a></p>
+    
+                </div>
+            
+            <div class="footer-links">
+                <p>Acknowledgement <a href="#"></a></p>
+                <p>Presentation Video <a href="#"></a></p>
+                <p>Individual Task <a href="#"></a></p>
+                <p>Enhancement <a href="#"></a></p>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="social-media">
+                <span>Follow Us</span>
+                <div class="icons">
+                    <a href="https://www.instagram.com/brewngo.coffee/"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="https://web.facebook.com/people/Brew-Go-Coffee/61554234958482/"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="mailto:brewngo.coffee@gmail.com"><img src="email-icon.png" alt="Email"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="copyright">
+            © 2025 Brew & Go. Coffee. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
