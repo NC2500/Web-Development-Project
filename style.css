@@ -223,30 +223,12 @@ footer {
     line-height: normal;
   }
   
-  .past-activities-page .image {
-    position: absolute;
-    width: 826px;
-    height: 546px;
-    top: 570px;
-    left: 0;
-    object-fit: cover;
-  }
-  
-  .past-activities-page .img {
-    position: absolute;
-    width: 812px;
-    height: 556px;
-    top: 140px;
-    left: 0;
-    object-fit: cover;
-  }
-  
   .past-activities-page .image-2 {
     position: absolute;
     width: 735px;
     height: 556px;
     top: 140px;
-    left: 705px;
+    left: 767px;
     object-fit: cover;
   }
   
@@ -258,25 +240,16 @@ footer {
     left: 767px;
   }
   
-  .past-activities-page .rectangle-2 {
-    position: absolute;
-    width: 890px;
-    height: 454px;
-    top: 419px;
-    left: 300px;
-    background-color: #d9d9d9cc;
-    border-radius: 60px;
-  }
-  
+
   .past-activities-page .text-wrapper-9 {
     position: absolute;
-    width: 870px;
+    width: 485px;
     top: 446px;
-    left: 337px;
+    left: 103px;
     font-family: "Lora-Regular", Helvetica;
     font-weight: 400;
     color: #000000;
-    font-size: 96px;
+    font-size: 64px;
     letter-spacing: 0;
     line-height: normal;
   }
@@ -801,3 +774,149 @@ footer {
     background-color: #d9d9d9; /* Header background color */
     font-weight: bold;
 }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px; /* Adjust based on your header/footer height */
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.membership-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.membership-form h2 {
+    color: #444;
+    margin-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Form Group - Aligning Fields */
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    max-width:800px
+}
+
+.form-group label {
+    flex-basis: 100%;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Name and Address in One Line */
+.form-group:first-child input {
+    margin-right: 4%;
+}
+.form-group:first-child input:last-child {
+    margin-right: 0;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: gray;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px; /* Adjust based on your header/footer height */
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.membership-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.membership-form h2 {
+    color: #444;
+    margin-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Form Group - Aligning Fields */
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    max-width:800px
+}
+
+.form-group label {
+    flex-basis: 100%;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Name and Address in One Line */
+.form-group:first-child input {
+    margin-right: 4%;
+}
+.form-group:first-child input:last-child {
+    margin-right: 0;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: gray;
+}
+
