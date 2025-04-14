@@ -212,7 +212,7 @@ footer {
   
   .past-activities-page .text-wrapper-8 {
     position: absolute;
-    width: 469px;
+    width: 500px;
     top: 0;
     left: 537px;
     font-family: "Lora-Regular", Helvetica;
@@ -240,6 +240,20 @@ footer {
     left: 767px;
   }
   
+  .past-activities-page .image-6 {
+    position: absolute;
+    width: 700px;
+    height: 1000px;
+    top: 100px;
+    left: 767px;
+  }
+  .past-activities-page .image-7 {
+    position: absolute;
+    width: 770px;
+    height: 938px;
+    top: 180px;
+    left: 700px;
+  }
 
   .past-activities-page .text-wrapper-9 {
     position: absolute;
