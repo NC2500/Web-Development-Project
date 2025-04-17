@@ -23,120 +23,56 @@
     <li><a href="#">LOGIN</a></li>
   </ul>
 </nav>
-<!--MemeberShip Registration-->
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="membership-page">
-      <div class="div">
-        <footer class="footer">
-          <div class="overlap">
-            <div class="overlap-group">
-              <div class="rectangle"></div>
-              <div class="text-wrapper">arrow to top</div>
-              <p class="acknowledgement">
-                Acknowledgement<br />Presentation Video hyperlink<br />Individual task<br />Enhancement (KIV)
-              </p>
-              <img class="line" src="img/line-1.svg" />
-              <img class="arrow" src="img/arrow-1.svg" />
-              <img class="erasebg-transformed" src="img/erasebg-transformed-1.png" />
-              <img class="img" src="img/erasebg-transformed-2.png" />
-              <div class="text-wrapper-2">Follow Us</div>
-            </div>
-            <p class="element-brew-go-coffee">© 2025 Brew &amp; Go. Coffee. All rights reserved.</p>
-          </div>
-        </footer>
-        <div class="navbar">
-          <div class="text-wrapper-3">LOGIN</div>
-          <div class="text-wrapper-4">ACTIVITIES</div>
-          <div class="text-wrapper-5">HOME</div>
-          <div class="text-wrapper-6">PRODUCTS</div>
-          <div class="text-wrapper-7">JOIN US</div>
-          <div class="text-wrapper-8">ENQUIRY</div>
-          <div class="text-wrapper-9">MEMBERSHIP</div>
-          <img class="logo-png" src="img/logo-png.png" />
-        </div>
-        <div class="overlap-2">
-          <div class="content">
-            <div class="overlap-3">
-              <div class="overlap-4">
-                <div class="rectangle-2"></div>
-                <div class="brew-go-membership">Brew &amp; Go. Membership</div>
-              </div>
-              <div class="div-wrapper"><div class="text-wrapper-10">Enjoy exclusive member prices</div></div>
-              <div class="overlap-5">
-                <div class="rectangle-3"></div>
-                <div class="text-wrapper-11">Lucky draw prizes awaits</div>
-              </div>
-              <div class="overlap-6">
-                <div class="rectangle-4"></div>
-                <div class="text-wrapper-12">Benefits</div>
-              </div>
-              <div class="overlap-7"><div class="text-wrapper-13">Chance for free drinks!</div></div>
-              <div class="overlap-8">
-                <div class="rectangle-2"></div>
-                <p class="p">Sign Up For Our Membership Today!</p>
-              </div>
-              <div class="to-become-a-member-wrapper">
-                <p class="to-become-a-member">
-                  To become a member, you can choose to top-up RM30, RM50, RM100 or RM200.<br /><br />Remaining credit
-                  in your account cannot be withdrawn.<br /><br />Our membership is for lifetime
-                </p>
-              </div>
-              <div class="in-an-event-of-wrapper">
-                <p class="in-an-event-of">
-                  In an event of insufficient credit balance, a minimum top-up of RM30 is required to continue enjoying
-                  member price.<br /><br />Members can choose to top-up RM50, RM100, or RM200.
-                </p>
-              </div>
-              <img class="image" src="img/duitnow.png" />
-            </div>
-          </div>
-          <div class="form">
-            <div class="overlap-9">
-                <div class="rectangle-5"></div>
-                <div class="text-wrapper-14">Payment reference</div>
-                <div class="rectangle-6"></div>
-                <div class="rectangle-7"></div>
-                <div class="rectangle-8"></div>
-                <div class="rectangle-9"></div>
-                <div class="text-wrapper-15">Membership form</div>
-                <div class="rectangle-10"></div>
-                <img class="rectangle-11" src="img/rectangle-7.svg" />
-                <div class="text-wrapper-16">Cancel</div>
-                <img class="rectangle-12" src="img/rectangle-17.svg" />
-                <div class="text-wrapper-17">Submit</div>
-                <form action="success.html" method="POST">
-                    <label for="first_name">First Name:</label>
-                    <input type="text" id="first_name" name="first_name" maxlength="25" pattern="[A-Za-z]+" required>
-                    <br><br>
 
-                    <label for="last_name">Last Name:</label>
-                    <input type="text" id="last_name" name="last_name" maxlength="25" pattern="[A-Za-z]+" required>
-                    <br><br>
+<!-- Membership Section -->
+<section class="membership">
+  <h1>Brew &amp; Go. Membership</h1>
+  <p>Enjoy exclusive member prices, lucky draw prizes, and more! Sign up now.</p>
+  <img src="images/duitnow.png" alt="Payment QR" width="250"/>
 
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required>
-                    <br><br>
+  <p>To become a member, choose to top-up RM30, RM50, RM100 or RM200. Remaining balance is non-refundable. Membership is lifetime.</p>
+  <p>If balance is insufficient, top-up RM30 minimum to continue enjoying member pricing.</p>
 
-                    <label for="login_id">Login ID:</label>
-                    <input type="text" id="login_id" name="login_id" maxlength="10" pattern="[A-Za-z]+" required>
-                    <br><br>
+  <h2>Membership Registration Form</h2>
+  <form action="success.html" method="POST">
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name" maxlength="25" pattern="[A-Za-z]+" required>
+    <br><br>
 
-                    <label for="password">Password:</label>
-                    <input type="text" id="password" name="password" maxlength="25" pattern="[A-Za-z]+" required>
-                    <br><br>
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name" maxlength="25" pattern="[A-Za-z]+" required>
+    <br><br>
 
-                    <button type="submit">Register</button>
-                </form>
-            </div>
-        </div>
-      </div>
-    </div>
-  </body>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <label for="login_id">Login ID:</label>
+    <input type="text" id="login_id" name="login_id" maxlength="10" pattern="[A-Za-z]+" required>
+    <br><br>
+
+    <label for="password">Password:</label>
+    <input type="text" id="password" name="password" maxlength="25" pattern="[A-Za-z]+" required>
+    <br><br>
+
+    <label for="payment">Payment Reference:</label>
+    <input type="text" id="payment" name="payment" required>
+    <br><br>
+
+    <button type="submit">Register</button>
+    <button type="reset">Cancel</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <hr>
+  <p>© 2025 Brew & Go. Coffee. All rights reserved.</p>
+  <p>Follow Us</p>
+  <p>Acknowledgement | Presentation Video | Individual Task | Enhancements</p>
+  <a href="#">Back to Top ↑</a>
+</footer>
+
+</body>
 </html>
+
