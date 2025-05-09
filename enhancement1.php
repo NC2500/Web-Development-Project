@@ -21,42 +21,42 @@
       <label for="menu-toggle" class="hamburger">&#9776;</label>
       <div class="mobile-dropdown-menu">
         <ul>
-          <li><a href="menu.html">MENU</a></li>
-          <li><a href="activities.html">ACTIVITIES</a></li>
-          <li><a href="joinus.html">JOIN US</a></li>
-          <li><a href="enquiry.html">ENQUIRY</a></li>
-          <li><a href="membership.html">MEMBERSHIP</a></li>
-          <li><a href="login.html">LOGIN</a></li>
+          <li><a href="menu.php">MENU</a></li>
+          <li><a href="activities.php">ACTIVITIES</a></li>
+          <li><a href="joinus.php">JOIN US</a></li>
+          <li><a href="enquiry.php">ENQUIRY</a></li>
+          <li><a href="membership.php">MEMBERSHIP</a></li>
+          <li><a href="login.php">LOGIN</a></li>
         </ul>
       </div>
       <div class="logo">
-          <a href="main.html"><img src="images/Logo_1.png" alt="Logo"></a>
+          <a href="main.php"><img src="images/Logo_1.png" alt="Logo"></a>
       </div>
       
       <ul class="nav-links">
           <li class="dropdown">
-              <a href="menu.html" class="dropbtn">MENU ▼</a>
+              <a href="menu.php" class="dropbtn">MENU ▼</a>
               <ul class="dropdown-menu">
-                  <li><a href="menu3.html">Basic Brew</a></li>
-                  <li><a href="menu1.html">Artisan Brew</a></li>
-                  <li><a href="menu2.html">Non-Coffee</a></li>
-                  <li><a href="menu4.html">Hot Beverages</a></li>
+                  <li><a href="menu3.php">Basic Brew</a></li>
+                  <li><a href="menu1.php">Artisan Brew</a></li>
+                  <li><a href="menu2.php">Non-Coffee</a></li>
+                  <li><a href="menu4.php">Hot Beverages</a></li>
       </ul>
       </li>
           
           <li class="dropdown">
-              <a href="activities.html" class="dropbtn">ACTIVITIES ▼</a>
+              <a href="activities.php" class="dropbtn">ACTIVITIES ▼</a>
               <ul class="dropdown-menu">
-                  <li><a href="coming_soon.html">Coming Soon</a></li>
-                  <li><a href="current.html">Current</a></li>
-                  <li><a href="past_activities.html">Past Activities</a></li>
+                  <li><a href="coming_soon.php">Coming Soon</a></li>
+                  <li><a href="current.php">Current</a></li>
+                  <li><a href="past_activities.php">Past Activities</a></li>
               </ul>
           </li>
           
-          <li><a href="joinus.html">JOIN US</a></li>
-          <li><a href="enquiry.html">ENQUIRY</a></li>
-          <li><a href="membership.html">MEMBERSHIP</a></li>
-          <li><a href="login.html">LOGIN</a></li>
+          <li><a href="joinus.php">JOIN US</a></li>
+          <li><a href="enquiry.php">ENQUIRY</a></li>
+          <li><a href="membership.php">MEMBERSHIP</a></li>
+          <li><a href="login.php">LOGIN</a></li>
       </ul>
     </nav>
   </header>
@@ -68,7 +68,7 @@
     <div class="enhancement-card">
       <h2>1. Responsive Layout Design (Media Queries)</h2>
       <p>This enhancement ensures all pages adjust beautifully across devices (desktop, tablet, mobile).</p>
-      <p><strong>Used in:</strong> All pages (main.html, menu.html, activities.html, etc.)</p>
+      <p><strong>Used in:</strong> All pages (main.php, menu.php, activities.php, etc.)</p>
       <div class="enhancement-image">
         <img src="images/enhancement-responsive.png" alt="Responsive Layout Example" />
       </div>
@@ -78,7 +78,7 @@
     <div class="enhancement-card">
       <h2>2. Animated Scrolling Menu Carousel</h2>
       <p>An infinite horizontal scroll animation is added to the menu carousel using keyframes.</p>
-      <p><strong>Used in:</strong> main.html (under Menu section)</p>
+      <p><strong>Used in:</strong> main.php (under Menu section)</p>
       <div class="enhancement-image">
         <img src="images/enhancement-carousel.png" alt="Carousel Animation" />
       </div>
@@ -108,7 +108,7 @@
     <div class="enhancement-card">
       <h2>5. Floating Coffee Cup Overlay</h2>
       <p>On the main page, a floating coffee cup image overlays the top of the menu carousel.</p>
-      <p><strong>Used in:</strong> main.html</p>
+      <p><strong>Used in:</strong> main.php</p>
       <div class="enhancement-image">
         <img src="images/enhancement-cupfloat.png" alt="Floating Cup Visual" />
       </div>
@@ -118,7 +118,7 @@
   <div class="enhancement-card">
     <h2>6. Dropdown Navigation Menu</h2>
     <p>The main navigation bar uses a dropdown menu structure for better organization and UX. When hovering over “Menu” or “Activities,” a submenu appears using pure HTML and CSS. This allows users to quickly access subpages and improves navigation hierarchy without needing JavaScript.</p>
-    <p><strong>Used in:</strong> All pages with navigation bar (e.g., main.html, menu.html, activities.html)</p>
+    <p><strong>Used in:</strong> All pages with navigation bar (e.g., main.php, menu.php, activities.php)</p>
     <div class="enhancement-image">
       <img src="images/enhancement-dropdown.png" alt="Dropdown Navigation Example" />
     </div>
@@ -129,7 +129,7 @@
     <div class="enhancement-card">
       <h2>7. Hover Elevation Effects</h2>
       <p>Cards (menu, activity, benefit, position, etc.) lift slightly on hover using `transform: translateY(-5px)`...</p>
-      <p><strong>Used in:</strong> menu.html, activities.html, joinus.html</p>
+      <p><strong>Used in:</strong> menu.php, activities.php, joinus.php</p>
       <div class="enhancement-image">
         <img src="images/enhancement-hovereffect.png" alt="Hover Card Effect" />
       </div>
@@ -139,7 +139,7 @@
     <div class="enhancement-card">
       <h2>8. Youtube Video Embedding</h2>
       <p>Music preferences are enhanced by embedding multiple YouTube iframes.</p>
-      <p><strong>Used in:</strong> aboutus1~4.html</p>
+      <p><strong>Used in:</strong> aboutus1~4.php</p>
       <div class="enhancement-image">
         <img src="images/enhancement-youtube.png" alt="YouTube Embed" />
       </div>
@@ -149,7 +149,7 @@
     <div class="enhancement-card">
       <h2>9. Embedded Google Map</h2>
       <p>This enhancement adds a real-time embedded Google Map to help users locate Brew & Go easily.</p>
-      <p><strong>Used in:</strong> main.html</p>
+      <p><strong>Used in:</strong> main.php</p>
       <div class="enhancement-image">
         <img src="images/enhancement-map.png" alt="Google Map Embed Example" />
       </div>
@@ -162,19 +162,19 @@
 
       <div class="footer-content">
         <div class="footer-links">
-            <span><a href="aboutus.html">About Us</a></span>
-            <p><a href="aboutus1.html">Norman Zhi Wen Chung </a></p>
-            <p><a href="aboutus2.html">Tammy Ru Xiu Tay</a></p>
-            <p><a href="aboutus3.html">Miaw Fong Lim</a></p>
-            <p><a href="aboutus4.html">Bahrose Hassan Babar</a></p>
+            <span><a href="aboutus.php">About Us</a></span>
+            <p><a href="aboutus1.php">Norman Zhi Wen Chung </a></p>
+            <p><a href="aboutus2.php">Tammy Ru Xiu Tay</a></p>
+            <p><a href="aboutus3.php">Miaw Fong Lim</a></p>
+            <p><a href="aboutus4.php">Bahrose Hassan Babar</a></p>
 
         </div>
     
         <div class="footer-links-2">
           <span>&nbsp;</span>
-            <p><a href="acknowledgement.html">Acknowledgement</a></p>
+            <p><a href="acknowledgement.php">Acknowledgement</a></p>
             <p><a href="https://youtu.be/_me0CROE8AU/">Presentation Video</a></p>
-            <p><a href="enhancement1.html">Enhancement</a></p>
+            <p><a href="enhancement1.php">Enhancement</a></p>
             <p>&nbsp;</p>
         </div>         
 

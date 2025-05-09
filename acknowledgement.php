@@ -16,42 +16,42 @@
     <label for="menu-toggle" class="hamburger">&#9776;</label>
     <div class="mobile-dropdown-menu">
       <ul>
-        <li><a href="menu.html">MENU</a></li>
-        <li><a href="activities.html">ACTIVITIES</a></li>
-        <li><a href="joinus.html">JOIN US</a></li>
-        <li><a href="enquiry.html">ENQUIRY</a></li>
-        <li><a href="membership.html">MEMBERSHIP</a></li>
-        <li><a href="login.html">LOGIN</a></li>
+        <li><a href="menu.php">MENU</a></li>
+        <li><a href="activities.php">ACTIVITIES</a></li>
+        <li><a href="joinus.php">JOIN US</a></li>
+        <li><a href="enquiry.php">ENQUIRY</a></li>
+        <li><a href="membership.php">MEMBERSHIP</a></li>
+        <li><a href="login.php">LOGIN</a></li>
       </ul>
     </div>
     <div class="logo">
-      <a href="main.html"><img src="images/Logo_1.png" alt="Logo"></a>
+      <a href="main.php"><img src="images/Logo_1.png" alt="Logo"></a>
     </div>
 
     <ul class="nav-links">
       <li class="dropdown">
-        <a href="menu.html" class="dropbtn">MENU ▼</a>
+        <a href="menu.php" class="dropbtn">MENU ▼</a>
         <ul class="dropdown-menu">
-          <li><a href="menu3.html">Basic Brew</a></li>
-          <li><a href="menu1.html">Artisan Brew</a></li>
-          <li><a href="menu2.html">Non-Coffee</a></li>
-          <li><a href="menu4.html">Hot Beverages</a></li>
+          <li><a href="menu3.php">Basic Brew</a></li>
+          <li><a href="menu1.php">Artisan Brew</a></li>
+          <li><a href="menu2.php">Non-Coffee</a></li>
+          <li><a href="menu4.php">Hot Beverages</a></li>
         </ul>
       </li>
 
       <li class="dropdown">
-        <a href="activities.html" class="dropbtn">ACTIVITIES ▼</a>
+        <a href="activities.php" class="dropbtn">ACTIVITIES ▼</a>
         <ul class="dropdown-menu">
-          <li><a href="coming_soon.html">Coming Soon</a></li>
-          <li><a href="current.html">Current</a></li>
-          <li><a href="past_activities.html">Past Activities</a></li>
+          <li><a href="coming_soon.php">Coming Soon</a></li>
+          <li><a href="current.php">Current</a></li>
+          <li><a href="past_activities.php">Past Activities</a></li>
         </ul>
       </li>
 
-      <li><a href="joinus.html">JOIN US</a></li>
-      <li><a href="enquiry.html">ENQUIRY</a></li>
-      <li><a href="membership.html">MEMBERSHIP</a></li>
-      <li><a href="login.html">LOGIN</a></li>
+      <li><a href="joinus.php">JOIN US</a></li>
+      <li><a href="enquiry.php">ENQUIRY</a></li>
+      <li><a href="membership.php">MEMBERSHIP</a></li>
+      <li><a href="login.php">LOGIN</a></li>
     </ul>
   </nav>
 
@@ -115,7 +115,7 @@
 
   <h2>Icons</h2>
   <ul>
-    <li>EPF & SOCSO – <a href="https://www.exacom.com.my/payroll.html">Exacom</a></li>
+    <li>EPF & SOCSO – <a href="https://www.exacom.com.my/payroll.php">Exacom</a></li>
     <li>Meal Allowance – <a href="https://www.iconfinder.com/icons/5125235/...">IconFinder</a></li>
     <li>Commission – <a href="https://uxwing.com/commission-discounts-icon/">UXWing</a></li>
     <li>Facebook – <a href="https://icons8.com/icons/set/facebook">Icons8</a></li>
@@ -130,18 +130,18 @@
 
     <div class="footer-content">
       <div class="footer-links">
-          <span><a href="aboutus.html">About Us</a></span>
-          <p><a href="aboutus1.html">Norman Zhi Wen Chung </a></p>
-          <p><a href="aboutus2.html">Tammy Ru Xiu Tay</a></p>
-          <p><a href="aboutus3.html">Miaw Fong Lim</a></p>
-          <p><a href="aboutus4.html">Bahrose Hassan Babar</a></p>
+          <span><a href="aboutus.php">About Us</a></span>
+          <p><a href="aboutus1.php">Norman Zhi Wen Chung </a></p>
+          <p><a href="aboutus2.php">Tammy Ru Xiu Tay</a></p>
+          <p><a href="aboutus3.php">Miaw Fong Lim</a></p>
+          <p><a href="aboutus4.php">Bahrose Hassan Babar</a></p>
       </div>
 
       <div class="footer-links-2">
         <span>&nbsp;</span>
-        <p><a href="acknowledgement.html">Acknowledgement</a></p>
+        <p><a href="acknowledgement.php">Acknowledgement</a></p>
         <p><a href="https://youtu.be/_me0CROE8AU/">Presentation Video</a></p>
-        <p><a href="enhancement1.html">Enhancement</a></p>
+        <p><a href="enhancement1.php">Enhancement</a></p>
       </div>
 
       <div class="social-media">
