@@ -1,0 +1,16 @@
+# Ignore all files inside these folders, but keep the folder itself
+uploads/cvs/*
+uploads/events/*
+uploads/newsletter/*
+uploads/photos/*
+uploads/payment_slip/*
+uploads/profile_pictures/*
+uploads/products/*
+# But do NOT ignore the folders themselves
+!uploads/cvs/
+!uploads/events/
+!uploads/newsletter/
+!uploads/payment_slip/
+!uploads/photos/
+!uploads/profile_pictures/
+uploads/products/
