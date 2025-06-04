@@ -4692,6 +4692,7 @@ details[open] summary {
     border-radius: 13px;
     box-shadow: 0 4px 20px #0001;
     overflow: hidden;
+    table-layout: fixed;
 }
 
 .admin-activities-table thead {
@@ -4717,6 +4718,46 @@ details[open] summary {
 
 .admin-activities-table tbody tr:last-child td {
     border-bottom: none;
+}
+
+.admin-activities-table th:nth-child(1), /* ID */
+.admin-activities-table td:nth-child(1) {
+    width: 5%;
+}
+
+.admin-activities-table th:nth-child(2), /* Title */
+.admin-activities-table td:nth-child(2) {
+    width: 20%;
+}
+
+.admin-activities-table th:nth-child(3), /* Date */
+.admin-activities-table td:nth-child(3) {
+    width: 10%;
+}
+
+.admin-activities-table th:nth-child(4), /* Time */
+.admin-activities-table td:nth-child(4) {
+    width: 10%;
+}
+
+.admin-activities-table th:nth-child(5), /* Location */
+.admin-activities-table td:nth-child(5) {
+    width: 10%;
+}
+
+.admin-activities-table th:nth-child(6), /* Link */
+.admin-activities-table td:nth-child(6) {
+    width: 8%;
+}
+
+.admin-activities-table th:nth-child(7), /* Image */
+.admin-activities-table td:nth-child(7) {
+    width: 8%;
+}
+
+.admin-activities-table th:nth-child(8), /* Actions */
+.admin-activities-table td:nth-child(8) {
+    width: 8%;
 }
 
 .admin-activities-table tbody tr:hover {

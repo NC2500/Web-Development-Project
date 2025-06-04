@@ -357,5 +357,24 @@ foreach ($products as [$category, $name, $price, $large, $filename]) {
 }
 echo "✅ Product migration complete: menu items inserted.<br>";
 
+// --- Activities Populating ---
+$activities = [
+    ['Seni Kita Weekend 4.0', 'Celebrate arts and community with Seni Kita Weekend 4.0. Enjoy live music, art workshops, and more.', 'images/CS/Seni Kita Weekend 4.0 v1.jpg', '2025-06-20', '10:00:00', '18:00:00', 'Cultural Hall', 'https://instagram.com/seni_kita_4'],
+    ['Grand Opening 2.0', 'Our grand opening 2.0 celebration with exclusive drinks and giveaways.', 'images/Current/Grand Opening 2.0 v1.jpg', '2025-06-04', '09:00:00', '21:00:00', 'Main Branch', 'https://brewngo.coffee/grand-opening-2'],
+    ['Seni Kita Weekend 1.0', 'Highlights of Seni Kita Weekend 1.0 where creativity and coffee met.', 'images/Past/Seni Kita Weekend 1.0 v1.jpg', '2024-03-12', '11:00:00', '17:00:00', 'Community Park', 'https://instagram.com/seni_kita_1'],
+    ['Seni Kita Weekend 2.0', 'Bigger and better: Seni Kita Weekend 2.0 brought together more artists and coffee lovers.', 'images/Past/Seni Kita Weekend 2.0 v1.jpg', '2024-06-18', '10:00:00', '18:00:00', 'Art District', 'https://instagram.com/seni_kita_2'],
+    ['Seni Kita Weekend 3.0', 'A celebration of local talents, coffee artistry, and live performances.', 'images/Past/Seni Kita Weekend 3.0 v1.jpg', '2024-10-05', '12:00:00', '20:00:00', 'Downtown Stage', 'https://instagram.com/seni_kita_3'],
+    ['Kuching Christmas Bazaar', 'Christmas-themed drinks, gifts, and live music at the annual bazaar.', 'images/Past/Kuching Christmas Bazaar.jpg', '2024-12-15', '10:00:00', '22:00:00', 'Waterfront Plaza', 'https://instagram.com/christmas_bazaar'],
+    ['Neurosurgical Health Conference', 'Partnered health event featuring our signature wellness drinks.', 'images/Past/Neurosurgical Association Malaysia Health Conference.mp4', '2024-09-10', '09:00:00', '17:00:00', 'Medical Hall', 'https://instagram.com/health_conf'],
+    ['Grand Opening 1.0', 'Throwback to our very first grand opening and ribbon-cutting.', 'images/Past/Grand Opening.jpg', '2023-05-01', '09:00:00', '18:00:00', 'Main Branch', ''],
+    ['Christmas Dreamville', 'A magical Christmas event with themed drinks and live caroling.', 'images/Past/Christmas Dreamville.mp4', '2023-12-20', '15:00:00', '22:00:00', 'Dreamville Cafe', 'https://instagram.com/dreamville_xmas'],
+];
+
+foreach ($activities as $activity) {
+    $stmt = $conn->prepare("INSERT INTO activities (title, description, image_path, event_date, start_time, end_time, location, external_link) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("ssssssss", $activity[0], $activity[1], $activity[2], $activity[3], $activity[4], $activity[5], $activity[6], $activity[7]);
+    $stmt->execute();
+}
+echo "✅ Activity migration complete: events inserted.<br>";
 mysqli_close($conn);
 ?>
