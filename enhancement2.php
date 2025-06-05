@@ -77,15 +77,15 @@
 <!-- 5 -->
 <div class="enhancement-card">
   <h2>5. Page Authorization (RBAC)</h2>
-  <p><strong>Goes Beyond Requirements:</strong> Prevents unauthorized access to admin pages using Role-Based Access Control (RBAC).</p>
-  <p><strong>Implementation Steps:</strong> Created `page_permissions` table, added middleware check in `auth.php`, and auto-seeded permissions by role.</p>
+  <p><strong>Goes Beyond Requirements:</strong> Enforces fine-grained access control to admin pages using Role-Based Access Control (RBAC). Unauthorized users are redirected to a custom <code>Access Denied</code> page with an explanation and a safe return button.</p>  <p><strong>Implementation Steps:</strong> Created `page_permissions` table, added middleware check in `auth.php`, and auto-seeded permissions by role.</p>
   <p><strong>Supported Operations:</strong><br>
      <strong>Create:</strong> Permissions seeded from setup.php<br>
      <strong>Read:</strong> System checks page/role match dynamically<br>
-     <strong>Update:</strong> Permissions can be modified in page_permissions.php<br>
+     <strong>Update:</strong> Admin can modify page-role pairs in `page_permissions` manually or via dashboard<br>
   </p>
   <div class="enhancement-image">
     <img src="images/enhancement-rbac.png" alt="RBAC">
+    <img src="images/enhancement-rbac2.png" alt="RBAC">
   </div>
 </div>
 
@@ -94,11 +94,9 @@
   <h2>6. Newsletter Subscription and History</h2>
   <p><strong>Goes Beyond Requirements:</strong> Adds newsletter sign-up for public users and message sending with attachment support for admins.</p>
   <p><strong>Implementation Steps:</strong> Built two tables: `newsletter_subscribers` for signups and `newsletter_history` for tracking sends.</p>
-  <p><strong>Supported Operations (CRUD):</strong><br>
+  <p><strong>Supported Operations:</strong><br>
      <strong>Create:</strong> Newsletter stored in `newsletter_history`<br>
      <strong>Read:</strong> Admin views history in `admin_view_newsletter.php`<br>
-     <strong>Update:</strong> Not implemented<br>
-     <strong>Delete:</strong> Not implemented
   </p>
   <div class="enhancement-image">
     <img src="images/enhancement-newsletter.png" alt="Newsletter">
