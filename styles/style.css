@@ -3320,20 +3320,20 @@ body.login-page::before {
 
 .enhancement-image {
   text-align: center;
-  margin: 20px 0;
+  margin: 24px 0;
 }
 
 .enhancement-image img {
-  width: 100%;
-  max-width: 600px; 
-  height: 400px; 
-  object-fit: cover; 
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   display: block;
   margin: 0 auto;
+  padding: 8px;
+  background: #fff;
 }
-
 
 .implementation-link {
   text-align: center;
@@ -5800,6 +5800,45 @@ h1 {
 
 .availability-readonly{
   background-color: #b5b5b5;
+}
+
+.admin-topup-panel {
+    margin-top: 90px;
+    padding: 20px;
+    background: #f9f9ff;
+    border:0 !important;
+    border-left: 4px solid #22338b33;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px #00000011;
+}
+
+.admin-topup-panel h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.admin-topup-panel .no-records {
+    font-style: italic;
+    color: #999;
+}
+
+.admin-topup-panel table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.admin-topup-panel th,
+.admin-topup-panel td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin-member-topup-wrapper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 /* Responsive Layout */
 /* Hamburger menu */

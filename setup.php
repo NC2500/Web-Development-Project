@@ -2,11 +2,11 @@
 
 function log_status($success, $successMsg, $failMsg, $conn = null) {
     if ($success) {
-        echo "✅ $successMsg<br>";
+        // echo "✅ $successMsg<br>";
     } else {
-        echo "❌ $failMsg";
+        // echo "❌ $failMsg";
         if ($conn) echo ": " . mysqli_error($conn);
-        echo "<br>";
+        // echo "<br>";
     }
 }
 
@@ -20,7 +20,7 @@ $conn = mysqli_connect($servername, $username, $password);
 if (!$conn) {
     die("❌ Connection failed: " . mysqli_connect_error());
 }
-echo "✅ Connected to MySQL server.<br>";
+// echo "✅ Connected to MySQL server.<br>";
 
 // Create database with utf8mb4 charset
 $sql = "CREATE DATABASE IF NOT EXISTS `$dbname` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci";
@@ -28,10 +28,10 @@ log_status(mysqli_query($conn, $sql), "Database '$dbname' is ready.", "Error cre
 
 // Select database
 mysqli_select_db($conn, $dbname);
-echo "✅ Selected database: $dbname<br>";
+// echo "✅ Selected database: $dbname<br>";
 
 /* --- 1. Roles Table --- */
-echo "<b>// 1. roles: User/Staff/Admin Roles</b><br>";
+// echo "<b>// 1. roles: User/Staff/Admin Roles</b><br>";
 $sql = "CREATE TABLE IF NOT EXISTS roles (
   id TINYINT AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(50) UNIQUE NOT NULL
@@ -48,7 +48,7 @@ foreach ($roles as $id => $name) {
 }
 
 /* --- 2. Membership Table --- */
-echo "<b>// 2. membership: Member Profile Info</b><br>";
+// echo "<b>// 2. membership: Member Profile Info</b><br>";
 $sql = "CREATE TABLE IF NOT EXISTS membership (
   id INT AUTO_INCREMENT PRIMARY KEY,
   member_id VARCHAR(10) UNIQUE,
@@ -69,7 +69,7 @@ $sql = "CREATE TABLE IF NOT EXISTS membership (
 log_status(mysqli_query($conn, $sql), "Table 'membership' ready.", "Table 'membership' failed", $conn);
 
 /* --- 3. User Table (Login credentials) --- */
-echo "<b>// 3. user: Login Credentials (linked to membership, role)</b><br>";
+// echo "<b>// 3. user: Login Credentials (linked to membership, role)</b><br>";
 $sql = "CREATE TABLE IF NOT EXISTS user (
   id INT AUTO_INCREMENT PRIMARY KEY,
   username VARCHAR(50) UNIQUE NOT NULL,
@@ -82,7 +82,7 @@ $sql = "CREATE TABLE IF NOT EXISTS user (
 log_status(mysqli_query($conn, $sql), "Table 'user' ready.", "Table 'user' failed", $conn);
 
 /* --- 4. Admin Table --- */
-echo "<b>// 4. admin: Standalone admin login table</b><br>";
+// echo "<b>// 4. admin: Standalone admin login table</b><br>";
 $sql = "CREATE TABLE IF NOT EXISTS admin (
   id INT AUTO_INCREMENT PRIMARY KEY,
   username VARCHAR(50) UNIQUE NOT NULL,
@@ -96,16 +96,16 @@ $check_admin_result = mysqli_query($conn, $check_admin_sql);
 if (mysqli_num_rows($check_admin_result) === 0) {
     $insert_admin_sql = "INSERT INTO admin (username, password) VALUES ('admin', 'admin')";
     if (mysqli_query($conn, $insert_admin_sql)) {
-        echo "✅ Default admin account created.<br>";
+        // echo "✅ Default admin account created.<br>";
     } else {
         echo "❌ Failed to create default admin: " . mysqli_error($conn) . "<br>";
     }
 } else {
-    echo "ℹ️ Default admin already exists.<br>";
+    // echo "ℹ️ Default admin already exists.<br>";
 }
 
 /* --- 5. job_application: Job/Join Us Table --- */
-echo "<b>// 5. job_application: Staff/Job Applications</b><br>";
+// echo "<b>// 5. job_application: Staff/Job Applications</b><br>";
 $sql = "CREATE TABLE IF NOT EXISTS job_application (
   id INT AUTO_INCREMENT PRIMARY KEY,
   first_name VARCHAR(100) NOT NULL,
@@ -125,7 +125,7 @@ $sql = "CREATE TABLE IF NOT EXISTS job_application (
 log_status(mysqli_query($conn, $sql), "Table 'job_application' ready.", "Table 'job_application' failed", $conn);
 
 /* --- 6. enquiry: Contact/Enquiry Submissions --- */
-echo "<b>// 6. enquiry: User Contact/Enquiry Messages</b><br>";
+// echo "<b>// 6. enquiry: User Contact/Enquiry Messages</b><br>";
 $sql = "CREATE TABLE IF NOT EXISTS enquiry (
   id INT AUTO_INCREMENT PRIMARY KEY,
   ticket_id VARCHAR(20) UNIQUE,
@@ -145,7 +145,7 @@ $sql = "CREATE TABLE IF NOT EXISTS enquiry (
 log_status(mysqli_query($conn, $sql), "Table 'enquiry' ready.", "Table 'enquiry' failed", $conn);
 
 /* --- 7. activities: Events/Blog Posts --- */
-echo "<b>// 7. activities: Events & Activities</b><br>";
+// echo "<b>// 7. activities: Events & Activities</b><br>";
 $sql = "CREATE TABLE IF NOT EXISTS activities (
   id INT AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(255) NOT NULL,
@@ -161,7 +161,7 @@ $sql = "CREATE TABLE IF NOT EXISTS activities (
 log_status(mysqli_query($conn, $sql), "Table 'activities' ready.", "Table 'activities' failed", $conn);
 
 /* --- 8. topup_history: Track Each Wallet Top-Up Event --- */
-echo "<b>// 10. topup_history: Member Wallet Top-Up Transactions</b><br>";
+// echo "<b>// 10. topup_history: Member Wallet Top-Up Transactions</b><br>";
 $sql = "CREATE TABLE IF NOT EXISTS topup_history (
   id INT AUTO_INCREMENT PRIMARY KEY,
   membership_id INT NOT NULL,
@@ -180,7 +180,7 @@ $sql = "CREATE TABLE IF NOT EXISTS newsletter_subscribers (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;";
 
 if (mysqli_query($conn, $sql)) {
-    echo "<p style='color:green;'>✅ Table <b>newsletter_subscribers</b> created or already exists.</p>";
+    // echo "<p style='color:green;'>✅ Table <b>newsletter_subscribers</b> created or already exists.</p>";
 } else {
     echo "<p style='color:red;'>❌ Failed to create table: " . mysqli_error($conn) . "</p>";
 }
@@ -195,13 +195,13 @@ $sql = "CREATE TABLE IF NOT EXISTS newsletter_history (
     sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;";
 if (mysqli_query($conn, $sql)) {
-    echo "<p style='color:green;'>✅ Table <b>newsletter_history</b> created or already exists.</p>";
+    // echo "<p style='color:green;'>✅ Table <b>newsletter_history</b> created or already exists.</p>";
 } else {
     echo "<p style='color:red;'>❌ Failed to create table newsletter_history: " . mysqli_error($conn) . "</p>";
 }
 
 /* --- 11. page_permissions: RBAC for admin dashboard --- */
-echo "<b>// 9. page_permissions: Role-Page Access</b><br>";
+// echo "<b>// 9. page_permissions: Role-Page Access</b><br>";
 $sql = "CREATE TABLE IF NOT EXISTS page_permissions (
   id INT AUTO_INCREMENT PRIMARY KEY,
   page VARCHAR(100) NOT NULL,
@@ -213,7 +213,11 @@ $sql = "CREATE TABLE IF NOT EXISTS page_permissions (
 log_status(mysqli_query($conn, $sql), "Table 'page_permissions' ready.", "Table 'page_permissions' failed", $conn);
 
 // Define all pages and allowed roles for each
-$page_perms = [
+$checkPerms = mysqli_query($conn, "SELECT COUNT(*) as count FROM page_permissions");
+$row = mysqli_fetch_assoc($checkPerms);
+if ((int)$row['count'] === 0) {
+    // Seed page_permissions only once
+    $page_perms = [
     // Restricted Pages (specific roles)
     'admin_dashboard.php'   => [1, 2, 3],
     
@@ -236,37 +240,29 @@ $page_perms = [
     'admin_view_newsletter.php'  => [1, 2],
     'admin_view_permissions.php'  => [1], //Super Admin Only
 ];
+    $role_ids = [];
+    $result = mysqli_query($conn, "SELECT id FROM roles");
+    while ($row = mysqli_fetch_assoc($result)) {
+        $role_ids[] = $row['id'];
+    }
 
-// Get all roles (from your roles table)
-$role_ids = [];
-$result = mysqli_query($conn, "SELECT id FROM roles");
-while ($row = mysqli_fetch_assoc($result)) {
-    $role_ids[] = $row['id'];
-}
-
-// Seed permissions
-foreach ($page_perms as $page => $allowed_roles) {
-    foreach ($role_ids as $role_id) {
-        $can_view = in_array($role_id, $allowed_roles) ? 1 : 0;
-        $page_escaped = mysqli_real_escape_string($conn, $page);
-        $check = mysqli_query($conn, "SELECT id FROM page_permissions WHERE page='$page_escaped' AND role_id=$role_id");
-        if (mysqli_num_rows($check) === 0) {
+    foreach ($page_perms as $page => $allowed_roles) {
+        foreach ($role_ids as $role_id) {
+            $can_view = in_array($role_id, $allowed_roles) ? 1 : 0;
+            $page_escaped = mysqli_real_escape_string($conn, $page);
             $sql = "INSERT INTO page_permissions (page, role_id, can_view) VALUES ('$page_escaped', $role_id, $can_view)";
-            mysqli_query($conn, $sql);
-        } else {
-            $sql = "UPDATE page_permissions SET can_view=$can_view WHERE page='$page_escaped' AND role_id=$role_id";
             mysqli_query($conn, $sql);
         }
     }
+    // echo "✅ Page permissions seeded.<br>";
 }
-echo "✅ Page permissions seeded.<br>";
 
 // --- 12. categories: Product Categories --- */
 $sql = "CREATE TABLE IF NOT EXISTS categories (
   id INT AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(100) UNIQUE NOT NULL
 )";
-echo mysqli_query($conn, $sql) ? "✅ Table 'categories' ready.<br>" : "❌ " . mysqli_error($conn);
+mysqli_query($conn, $sql) ? "✅ Table 'categories' ready.<br>" : "❌ " . mysqli_error($conn);
 
 // --- 13. products: Products --- */
 $sql = "CREATE TABLE IF NOT EXISTS products (
@@ -282,7 +278,7 @@ $sql = "CREATE TABLE IF NOT EXISTS products (
   created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
   FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE SET NULL
 ) ENGINE=InnoDB";
-echo mysqli_query($conn, $sql) ? "✅ Table 'products' (with category_id) ready.<br>" : "❌ " . mysqli_error($conn);
+mysqli_query($conn, $sql) ? "✅ Table 'products' (with category_id) ready.<br>" : "❌ " . mysqli_error($conn);
 
 // --- Category Populating --- */
 $categoryList = ['Basic Brew', 'Artisan Brew', 'Non-Coffee', 'Hot Beverages'];
@@ -355,26 +351,31 @@ foreach ($products as [$category, $name, $price, $large, $filename]) {
         mysqli_query($conn, $insert);
     }
 }
-echo "✅ Product migration complete: menu items inserted.<br>";
+// echo "✅ Product migration complete: menu items inserted.<br>";
 
 // --- Activities Populating ---
-$activities = [
-    ['Seni Kita Weekend 4.0', 'Celebrate arts and community with Seni Kita Weekend 4.0. Enjoy live music, art workshops, and more.', 'images/CS/Seni Kita Weekend 4.0 v1.jpg', '2025-06-20', '10:00:00', '18:00:00', 'Cultural Hall', 'https://instagram.com/seni_kita_4'],
-    ['Grand Opening 2.0', 'Our grand opening 2.0 celebration with exclusive drinks and giveaways.', 'images/Current/Grand Opening 2.0 v1.jpg', '2025-06-04', '09:00:00', '21:00:00', 'Main Branch', 'https://brewngo.coffee/grand-opening-2'],
-    ['Seni Kita Weekend 1.0', 'Highlights of Seni Kita Weekend 1.0 where creativity and coffee met.', 'images/Past/Seni Kita Weekend 1.0 v1.jpg', '2024-03-12', '11:00:00', '17:00:00', 'Community Park', 'https://instagram.com/seni_kita_1'],
-    ['Seni Kita Weekend 2.0', 'Bigger and better: Seni Kita Weekend 2.0 brought together more artists and coffee lovers.', 'images/Past/Seni Kita Weekend 2.0 v1.jpg', '2024-06-18', '10:00:00', '18:00:00', 'Art District', 'https://instagram.com/seni_kita_2'],
-    ['Seni Kita Weekend 3.0', 'A celebration of local talents, coffee artistry, and live performances.', 'images/Past/Seni Kita Weekend 3.0 v1.jpg', '2024-10-05', '12:00:00', '20:00:00', 'Downtown Stage', 'https://instagram.com/seni_kita_3'],
-    ['Kuching Christmas Bazaar', 'Christmas-themed drinks, gifts, and live music at the annual bazaar.', 'images/Past/Kuching Christmas Bazaar.jpg', '2024-12-15', '10:00:00', '22:00:00', 'Waterfront Plaza', 'https://instagram.com/christmas_bazaar'],
-    ['Neurosurgical Health Conference', 'Partnered health event featuring our signature wellness drinks.', 'images/Past/Neurosurgical Association Malaysia Health Conference.mp4', '2024-09-10', '09:00:00', '17:00:00', 'Medical Hall', 'https://instagram.com/health_conf'],
-    ['Grand Opening 1.0', 'Throwback to our very first grand opening and ribbon-cutting.', 'images/Past/Grand Opening.jpg', '2023-05-01', '09:00:00', '18:00:00', 'Main Branch', ''],
-    ['Christmas Dreamville', 'A magical Christmas event with themed drinks and live caroling.', 'images/Past/Christmas Dreamville.mp4', '2023-12-20', '15:00:00', '22:00:00', 'Dreamville Cafe', 'https://instagram.com/dreamville_xmas'],
-];
+$checkActivities = mysqli_query($conn, "SELECT COUNT(*) as count FROM activities");
+$row = mysqli_fetch_assoc($checkActivities);
+if ((int)$row['count'] === 0) {
+    $activities = [
+        ['Seni Kita Weekend 4.0', 'Celebrate arts and community with Seni Kita Weekend 4.0. Enjoy live music, art workshops, and more.', 'images/CS/Seni Kita Weekend 4.0 v1.jpg', '2025-06-20', '10:00:00', '18:00:00', 'Cultural Hall', 'https://instagram.com/seni_kita_4'],
+        ['Grand Opening 2.0', 'Our grand opening 2.0 celebration with exclusive drinks and giveaways.', 'images/Current/Grand Opening 2.0 v1.jpg', '2025-06-04', '09:00:00', '21:00:00', 'Main Branch', 'https://brewngo.coffee/grand-opening-2'],
+        ['Seni Kita Weekend 1.0', 'Highlights of Seni Kita Weekend 1.0 where creativity and coffee met.', 'images/Past/Seni Kita Weekend 1.0 v1.jpg', '2024-03-12', '11:00:00', '17:00:00', 'Community Park', 'https://instagram.com/seni_kita_1'],
+        ['Seni Kita Weekend 2.0', 'Bigger and better: Seni Kita Weekend 2.0 brought together more artists and coffee lovers.', 'images/Past/Seni Kita Weekend 2.0 v1.jpg', '2024-06-18', '10:00:00', '18:00:00', 'Art District', 'https://instagram.com/seni_kita_2'],
+        ['Seni Kita Weekend 3.0', 'A celebration of local talents, coffee artistry, and live performances.', 'images/Past/Seni Kita Weekend 3.0 v1.jpg', '2024-10-05', '12:00:00', '20:00:00', 'Downtown Stage', 'https://instagram.com/seni_kita_3'],
+        ['Kuching Christmas Bazaar', 'Christmas-themed drinks, gifts, and live music at the annual bazaar.', 'images/Past/Kuching Christmas Bazaar.jpg', '2024-12-15', '10:00:00', '22:00:00', 'Waterfront Plaza', 'https://instagram.com/christmas_bazaar'],
+        ['Neurosurgical Health Conference', 'Partnered health event featuring our signature wellness drinks.', 'images/Past/Neurosurgical Association Malaysia Health Conference.mp4', '2024-09-10', '09:00:00', '17:00:00', 'Medical Hall', 'https://instagram.com/health_conf'],
+        ['Grand Opening 1.0', 'Throwback to our very first grand opening and ribbon-cutting.', 'images/Past/Grand Opening.jpg', '2023-05-01', '09:00:00', '18:00:00', 'Main Branch', ''],
+        ['Christmas Dreamville', 'A magical Christmas event with themed drinks and live caroling.', 'images/Past/Christmas Dreamville.mp4', '2023-12-20', '15:00:00', '22:00:00', 'Dreamville Cafe', 'https://instagram.com/dreamville_xmas']
+    ];
 
-foreach ($activities as $activity) {
-    $stmt = $conn->prepare("INSERT INTO activities (title, description, image_path, event_date, start_time, end_time, location, external_link) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("ssssssss", $activity[0], $activity[1], $activity[2], $activity[3], $activity[4], $activity[5], $activity[6], $activity[7]);
-    $stmt->execute();
+    foreach ($activities as $activity) {
+        $stmt = $conn->prepare("INSERT INTO activities (title, description, image_path, event_date, start_time, end_time, location, external_link) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param("ssssssss", $activity[0], $activity[1], $activity[2], $activity[3], $activity[4], $activity[5], $activity[6], $activity[7]);
+        $stmt->execute();
+    }
+    // echo "✅ Activities seeded.<br>";
 }
-echo "✅ Activity migration complete: events inserted.<br>";
+
 mysqli_close($conn);
 ?>

@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 $display_name = 'Admin';
                 $role_label = 'Administrator';
-                $welcome_icon = '👑';
+                $welcome_icon = '';
                 $redirect_url = 'admin_dashboard.php';
                 $custom_message = 'You are now logged in as an administrator.';
                 goto login_success;

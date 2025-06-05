@@ -10,7 +10,8 @@ $is_user = ($role_id == 4);        // User
 $is_admin_or_operator = $is_admin || $is_operator;
 $is_staff_logged_in = $is_staff && isset($_SESSION['user_id']);
 $is_user_logged_in = $is_user && isset($_SESSION['user_id']);
-$is_logged_in = isset($_SESSION['user_id']) || isset($_SESSION['admin_id']); // covers all
+$is_admin_logged_in = isset($_SESSION['admin_id']);
+$is_member_logged_in = isset($_SESSION['user_id']);
 
 $member_full_name = '';
 if (($is_staff_logged_in || $is_user_logged_in) && isset($_SESSION['membership_id'])) {
@@ -26,34 +27,42 @@ if (($is_staff_logged_in || $is_user_logged_in) && isset($_SESSION['membership_i
     }
     mysqli_stmt_close($stmt);
 }
-
 ?>
 
 <nav class="navbar">
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
     <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+    <!-- ✅ Mobile Dropdown -->
     <div class="mobile-dropdown-menu">
-      <ul>
-        <li><a href="menu.php">MENU</a></li>
-        <li><a href="activities.php">ACTIVITIES</a></li>
-        <li><a href="joinus.php">JOIN US</a></li>
-        <li><a href="enquiry.php">ENQUIRY</a></li>
-        <?php if ($is_admin_logged_in): ?>
-            <li><a href="admin_dashboard.php">View</a></li>
-            <li><a href="logout.php">LOGOUT</a></li>
-        <?php elseif ($is_member_logged_in): ?>
-            <li><a href="profile.php"><?= $member_full_name ?></a></li>
-            <li><a href="logout.php">LOGOUT</a></li>
-        <?php else: ?>
-            <li><a href="membership.php">MEMBERSHIP</a></li>
-            <li><a href="login.php">LOGIN</a></li>
-        <?php endif; ?>
-      </ul>
+        <ul>
+            <li><a href="menu.php">MENU</a></li>
+            <li><a href="activities.php">ACTIVITIES</a></li>
+            <li><a href="joinus.php">JOIN US</a></li>
+            <li><a href="enquiry.php">ENQUIRY</a></li>
+
+            <?php if ($is_admin_or_operator): ?>
+                <li><a href="admin_dashboard.php">ADMIN</a></li>
+                <li><a href="logout.php">LOGOUT</a></li>
+            <?php elseif ($is_staff_logged_in): ?>
+                <li><a href="profile.php"><?= $member_full_name ?></a></li>
+                <li><a href="admin_dashboard.php">VIEW</a></li>
+                <li><a href="logout.php">LOGOUT</a></li>
+            <?php elseif ($is_user_logged_in): ?>
+                <li><a href="profile.php"><?= $member_full_name ?></a></li>
+                <li><a href="logout.php">LOGOUT</a></li>
+            <?php else: ?>
+                <li><a href="membership.php">MEMBERSHIP</a></li>
+                <li><a href="login.php">LOGIN</a></li>
+            <?php endif; ?>
+        </ul>
     </div>
+
+    <!-- ✅ Desktop Navbar -->
     <div class="logo">
         <a href="main.php"><img src="images/Logo_1.png" alt="Logo"></a>
     </div>
-    
+
     <ul class="nav-links">
         <li class="dropdown">
             <a href="menu.php" class="dropbtn">MENU ▼</a>
@@ -64,6 +73,7 @@ if (($is_staff_logged_in || $is_user_logged_in) && isset($_SESSION['membership_i
                 <li><a href="menu4.php">Hot Beverages</a></li>
             </ul>
         </li>
+
         <li class="dropdown">
             <a href="activities.php" class="dropbtn">ACTIVITIES ▼</a>
             <ul class="dropdown-menu">
@@ -72,8 +82,10 @@ if (($is_staff_logged_in || $is_user_logged_in) && isset($_SESSION['membership_i
                 <li><a href="past_activities.php">Past Activities</a></li>
             </ul>
         </li>
+
         <li><a href="joinus.php">JOIN US</a></li>
         <li><a href="enquiry.php">ENQUIRY</a></li>
+
         <?php if ($is_admin_or_operator): ?>
             <li><a href="admin_dashboard.php">ADMIN</a></li>
             <li><a href="logout.php">LOGOUT</a></li>

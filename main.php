@@ -12,7 +12,12 @@
   <div id="top"></div>
 
   <header>
-    <?php include 'navbar.php'; ?>
+    <?php 
+    session_start();
+    include 'setup.php';
+    include 'connection.php';
+    include 'navbar.php'; 
+    ?>
   </header>
  
     <section class="hero">

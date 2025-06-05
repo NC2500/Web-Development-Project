@@ -177,6 +177,7 @@ if (($is_admin || $is_operator) && isset($_POST['delete_activity']) && $_POST['d
             </div>
             <div class="admin-activities-action-btn-row">
                 <button type="submit" class="admin-add-button">Save Changes</button>
+        </form>
                 <?php if ($is_admin || $is_operator): ?>
                     <!-- Delete uses a separate form for safety -->
                     <form method="post" onsubmit="return confirm('Are you sure you want to delete this activity?');" style="display:inline;">
@@ -185,8 +186,7 @@ if (($is_admin || $is_operator) && isset($_POST['delete_activity']) && $_POST['d
                     </form>
                 <?php endif; ?>
             </div>
-        </form>
-    </>
+    </div>
 </div>
 </body>
 </html>

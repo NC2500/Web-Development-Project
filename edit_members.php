@@ -182,7 +182,45 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <button type="submit" class="btn-delete-member">Delete Member</button>
                 </form>
             </div>
+            <?php
+        // Fetch top-up history for this member
+        $topups = [];
+        $topup_stmt = $conn->prepare("SELECT id, amount, created_at FROM topup_history WHERE membership_id = ? ORDER BY created_at DESC");
+        $topup_stmt->bind_param("i", $id);
+        $topup_stmt->execute();
+        $result_topup = $topup_stmt->get_result();
+        while ($row = $result_topup->fetch_assoc()) {
+            $topups[] = $row;
+        }
+        $topup_stmt->close();
+        ?>
+
+        <div class="admin-topup-panel">
+            <h3>Top-Up History</h3>
+            <?php if (count($topups) === 0): ?>
+                <p class="no-records">No top-up records available.</p>
+                <?php else: ?>
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Amount (RM)</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php foreach ($topups as $topup): ?>
+                                    <tr>
+                                        <td><?= htmlspecialchars($topup['id']) ?></td>
+                                        <td><?= number_format($topup['amount'], 2) ?></td>
+                                        <td><?= htmlspecialchars($topup['created_at']) ?></td>
+                                    </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        <?php endif; ?>
+        </div>
     </div>
-</div>
 </body>
 </html>
+        
