@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['newsletter_email'])) 
         <div class="footer-links-2">
           <span>&nbsp;</span>
             <p><a href="acknowledgement.php">Acknowledgement</a></p>
-            <p><a href="https://youtu.be/_me0CROE8AU/">Presentation Video</a></p>
+            <p><a href="https://youtu.be/I0oiWn_rF5o">Presentation Video</a></p>
             <p><a href="enhancement2.php">Enhancement</a></p>
             <p>&nbsp;</p>
         </div>         
