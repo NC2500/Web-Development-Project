@@ -130,7 +130,7 @@ while ($r = mysqli_fetch_assoc($res)) $role_options[$r['id']] = $r['name'];
                         </div>
                         <div>
                             <label for="filter_status">Filter by Status:</label>
-                            <select id="filter_status" name="filter_status" onchange="this.form.submit()" style="padding: 5px;">
+                            <select id="filter_status" name="filter_status" style="padding: 5px;">
                                 <option value="" <?php echo $filter_status === '' ? 'selected' : ''; ?>>All Status</option>
                                 <option value="active" <?php echo $filter_status === 'active' ? 'selected' : ''; ?>>Active</option>
                                 <option value="inactive" <?php echo $filter_status === 'inactive' ? 'selected' : ''; ?>>Inactive</option>
@@ -138,7 +138,7 @@ while ($r = mysqli_fetch_assoc($res)) $role_options[$r['id']] = $r['name'];
                         </div>
                         <div>
                             <label for="sort_joined">Sort by Joined:</label>
-                            <select id="sort_joined" name="sort_joined" onchange="this.form.submit()" style="padding: 5px;">
+                            <select id="sort_joined" name="sort_joined" style="padding: 5px;">
                                 <option value="desc" <?php echo $sort_joined === 'desc' ? 'selected' : ''; ?>>Newest First</option>
                                 <option value="asc" <?php echo $sort_joined === 'asc' ? 'selected' : ''; ?>>Oldest First</option>
                             </select>
@@ -190,7 +190,6 @@ while ($r = mysqli_fetch_assoc($res)) $role_options[$r['id']] = $r['name'];
                                     <input type="hidden" name="sort_joined" value="<?= htmlspecialchars($sort_joined) ?>">
                                     <select name="new_role_id"
                                         class="status-pill role-pill <?= strtolower($role_options[$row['role_id']]) ?>"
-                                        onchange="this.form.submit()"
                                         style="min-width:90px;">
                                         <?php foreach ($role_options as $rid => $rname): ?>
                                             <option value="<?= $rid ?>" <?= $row['role_id'] == $rid ? 'selected' : '' ?>>

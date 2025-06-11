@@ -110,7 +110,7 @@ if (!$result) {
             </div>
             <div class="admin-search-sort-group">
               <label class="admin-search-sort-label" for="filter_availability">Filter by Availability:</label>
-              <select id="filter_availability" name="filter_availability" onchange="this.form.submit()" style="padding: 5px;">
+              <select id="filter_availability" name="filter_availability" style="padding: 5px;">
                 <option value="" <?= $filter_availability === '' ? 'selected' : '' ?>>All Products</option>
                 <option value="Available" <?= $filter_availability === 'Available' ? 'selected' : '' ?>>Available</option>
                 <option value="Unavailable" <?= $filter_availability === 'Unavailable' ? 'selected' : '' ?>>Unavailable</option>

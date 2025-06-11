@@ -220,7 +220,7 @@ mysqli_stmt_close($stmt);
                         </div>
                         <div>
                             <label for="sort_date">Sort by Date:</label>
-                            <select id="sort_date" name="sort_date" onchange="this.form.submit()" style="padding: 5px;">
+                            <select id="sort_date" name="sort_date" style="padding: 5px;">
                                 <option value="desc" <?= $sort_date === 'desc' ? 'selected' : ''; ?>>Newest First</option>
                                 <option value="asc" <?= $sort_date === 'asc' ? 'selected' : ''; ?>>Oldest First</option>
                             </select>

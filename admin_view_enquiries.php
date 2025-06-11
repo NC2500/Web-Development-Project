@@ -103,7 +103,7 @@ $resolved = filter_enquiries(fetchEnquiriesByStatus($conn, "Resolved", $sort_sub
                     </div>
                     <div class="admin-search-sort-group">
                         <label class="admin-search-sort-label" for="sort_submitted">Sort by Date:</label>
-                        <select class="admin-search-sort-select" id="sort_submitted" name="sort_submitted" onchange="this.form.submit()">
+                        <select class="admin-search-sort-select" id="sort_submitted" name="sort_submitted">
                             <option value="desc" <?= $sort_submitted === 'desc' ? 'selected' : '' ?>>Newest First</option>
                             <option value="asc" <?= $sort_submitted === 'asc' ? 'selected' : '' ?>>Oldest First</option>
                         </select>

@@ -119,7 +119,6 @@ function renderJobTable($jobs, $show_id, $edit_id, $search_name, $search_email, 
                     <input type="hidden" name="filter_shift" value="<?= htmlspecialchars($filter_shift) ?>">
                     <select name="status"
                         class="status-pill <?= strtolower($row['status']) ?>"
-                        onchange="this.form.submit()"
                         style="min-width:105px;">
                         <option value="Pending"   <?= $row['status'] == 'Pending' ? 'selected' : '' ?>>Pending</option>
                         <option value="Accepted"  <?= $row['status'] == 'Accepted' ? 'selected' : '' ?>>Accepted</option>
@@ -234,7 +233,7 @@ function renderJobTable($jobs, $show_id, $edit_id, $search_name, $search_email, 
                             </div>
                             <div>
                                 <label for="filter_status">Filter by Status:</label>
-                                <select id="filter_status" name="filter_status" onchange="this.form.submit()" style="padding: 5px;">
+                                <select id="filter_status" name="filter_status" style="padding: 5px;">
                                     <option value="" <?= $filter_status === '' ? 'selected' : ''; ?>>All Statuses</option>
                                     <option value="Pending" <?= $filter_status === 'Pending' ? 'selected' : ''; ?>>Pending</option>
                                     <option value="Accepted" <?= $filter_status === 'Accepted' ? 'selected' : ''; ?>>Accepted</option>
@@ -243,7 +242,7 @@ function renderJobTable($jobs, $show_id, $edit_id, $search_name, $search_email, 
                             </div>
                             <div>
                                 <label for="filter_shift">Filter by Preferred Shift:</label>
-                                <select id="filter_shift" name="filter_shift" onchange="this.form.submit()" style="padding: 5px;">
+                                <select id="filter_shift" name="filter_shift" style="padding: 5px;">
                                     <option value="" <?= $filter_shift === '' ? 'selected' : ''; ?>>All Shifts</option>
                                     <option value="Morning" <?= $filter_shift === 'Morning' ? 'selected' : ''; ?>>Morning</option>
                                     <option value="Evening" <?= $filter_shift === 'Evening' ? 'selected' : ''; ?>>Evening</option>
